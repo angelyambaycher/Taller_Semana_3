@@ -129,54 +129,47 @@ Incluye:
 
 ---
 
-## 📊 Visualizaciones del proyecto
+## 📊 Visualizaciones del Análisis
 
-A continuación se muestran las principales figuras generadas durante el análisis de clustering.  
-Cada imagen está disponible dentro de la carpeta [`figures/`](figures/).
-
----
-
-### 🔹 Método del Codo (K-Means)
-
-![Elbow Method](https://raw.githubusercontent.com/angelyambaycher/Taller_Semana_3/main/figures/elbow_kmeans.png)
+A continuación se muestran las figuras generadas durante el proceso de clustering usando K-Means, DBSCAN, PCA y t-SNE.  
+Todas las imágenes se encuentran en la carpeta [`figures/`](figures/).
 
 ---
 
-### 🔹 Clusters K-Means (PCA 2D)
+### 🔹 1. Mapa de Calor de Correlaciones
+![Heatmap Correlations](https://raw.githubusercontent.com/angelyambaycher/Taller_Semana_3/main/figures/heatmap_correlations.png)
 
+---
+
+### 🔹 2. Método del Codo (K-Means)
+![Elbow KMeans](https://raw.githubusercontent.com/angelyambaycher/Taller_Semana_3/main/figures/elbow_kmeans.png)
+
+---
+
+### 🔹 3. Silhouette Score (K-Means)
+![Silhouette KMeans](https://raw.githubusercontent.com/angelyambaycher/Taller_Semana_3/main/figures/silhouette_kmeans.png)
+
+---
+
+### 🔹 4. PCA – Visualización 2D de K-Means
 ![KMeans PCA](https://raw.githubusercontent.com/angelyambaycher/Taller_Semana_3/main/figures/kmeans_pca.png)
 
 ---
 
-### 🔹 Clusters K-Means (t-SNE)
-
-![KMeans t-SNE](https://raw.githubusercontent.com/angelyambaycher/Taller_Semana_3/main/figures/kmeans_tsne.png)
-
----
-
-### 🔹 Visualización DBSCAN
-
-![DBSCAN Clusters](https://raw.githubusercontent.com/angelyambaycher/Taller_Semana_3/main/figures/dbscan_clusters.png)
+### 🔹 5. t-SNE – Visualización de Clusters K-Means
+![tSNE KMeans](https://raw.githubusercontent.com/angelyambaycher/Taller_Semana_3/main/figures/tsne_kmeans.png)
 
 ---
 
-### 🔹 PCA – Reducción y Visualización
-
-![PCA 2D](https://raw.githubusercontent.com/angelyambaycher/Taller_Semana_3/main/figures/pca_2d.png)
-
----
-
-### 🔹 Comparación de Silhouette Score
-
-![Silhouette Comparison](https://raw.githubusercontent.com/angelyambaycher/Taller_Semana_3/main/figures/silhouette_comparison.png)
+### 🔹 6. Visualización por DBSCAN (PCA 2D)
+![DBSCAN PCA](https://raw.githubusercontent.com/angelyambaycher/Taller_Semana_3/main/figures/dbscan_pca.png)
 
 ---
 
 ## 📂 Carpeta de Figuras
-
 Todas las imágenes están disponibles aquí:
 
-👉 [`figures/`](https://github.com/angelyambaycher/Taller_Semana_3/tree/main/figures)
+👉 https://github.com/angelyambaycher/Taller_Semana_3/tree/main/figures
 
 
 ---
