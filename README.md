@@ -1,0 +1,159 @@
+# Proyecto de Clustering con Dataset AI4I
+
+# Proyecto: Segmentación de Máquinas Industriales con Métodos No Supervisados (AI4I 2020)
+
+## 🎯 Objetivo
+Implementar y analizar modelos de aprendizaje no supervisado (K-Means, DBSCAN, PCA y t-SNE) para segmentar perfiles operativos en un entorno tecnológico industrial.  
+El propósito es identificar patrones, detectar anomalías y visualizar los resultados de forma clara y técnica.
+
+---
+
+## 📂 1. Preparación del entorno
+El proyecto fue desarrollado en **Python 3.9+** usando Google Colab.
+
+**Librerías utilizadas:**
+- pandas  
+- numpy  
+- matplotlib  
+- seaborn  
+- scikit-learn
+
+---
+
+## 📊 2. Dataset
+
+Se usó el dataset **AI4I 2020 Predictive Maintenance**, validado por el docente.
+
+Link oficial:  
+https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset
+
+Variables utilizadas:
+- Air temperature \[K\]  
+- Process temperature \[K\]  
+- Rotational speed \[rpm\]  
+- Torque \[Nm\]  
+- Tool wear \[min\]
+
+Estas variables representan el comportamiento físico de las máquinas y permiten construir perfiles operativos.
+
+---
+
+## 🔍 3. Análisis Exploratorio (EDA)
+
+Incluye:
+
+- Estadísticos descriptivos  
+- Distribuciones y pairplots  
+- Heatmap de correlaciones  
+- Eliminación de columnas irrelevantes (UDI, Product ID, Type)  
+- Escalado con StandardScaler  
+
+Hallazgos:
+- Fuerte correlación entre temperaturas del aire y del proceso  
+- Alta dispersión en torque y velocidad → ideal para clustering  
+- Diferencias operativas claras en desgaste de herramienta
+
+---
+
+## 🤖 4. Implementación de Modelos
+
+### 🔹 4.1 K-Means
+- Se evaluó k entre 2 y 10 (método del codo + índice silhouette).  
+- El mejor valor fue **k = 4**.  
+- Los clusters representan diferentes perfiles de operación industrial.
+
+### 🔹 4.2 DBSCAN
+- Ajuste mediante eps y min_samples  
+- Detectó:
+  - 1 cluster principal  
+  - varios grupos pequeños  
+  - outliers catalogados como -1  
+- Útil para identificar máquinas con comportamiento anómalo.
+
+### 🔹 4.3 PCA
+- Reducción a 2 componentes principales  
+- Permite visualización global de los grupos
+
+### 🔹 4.4 t-SNE
+- Proyección no lineal  
+- Identifica microgrupos y estructura interna compleja
+
+---
+
+## 📈 5. Visualización de Resultados
+
+Incluye:
+
+- Comparación entre K-Means y DBSCAN  
+- PCA 2D coloreado por cluster  
+- t-SNE coloreado  
+- Tabla resumen de perfiles  
+- Identificación de centroides
+
+---
+
+## 🧩 6. Perfiles Detectados (K-Means)
+
+### **Cluster 0 – Operación Estable**
+- Alta velocidad  
+- Torque medio  
+- Desgaste moderado
+
+### **Cluster 1 – Operación Ligera**
+- Torque bajo  
+- Velocidad baja  
+- Mínimo desgaste
+
+### **Cluster 2 – Operación Mixta**
+- Velocidad media  
+- Torque variable
+
+### **Cluster 3 – Uso Extremo**
+- Alto torque  
+- Alto desgaste  
+- Riesgo potencial de falla
+
+---
+
+## 🔄 7. Comparación entre Métodos
+
+### ✔ K-Means
+- Grupos muy definidos  
+- Representación consistente  
+- Útil para clustering general  
+
+### ✔ DBSCAN
+- Detecta outliers naturalmente  
+- Más sensible a parámetros  
+- Adecuado para identificar anomalías  
+
+---
+
+## ⚠️ Limitaciones
+
+- PCA pierde estructura no lineal  
+- t-SNE requiere ajuste fino  
+- DBSCAN depende de eps y min_samples  
+- K-Means requiere elegir k previamente  
+
+---
+
+## 📁 Estructura del repositorio
+Proyecto-Clustering-AI4I/
+│
+├── data/
+├── notebooks/
+├── src/
+├── figures/
+├── results/
+├── README.md
+└── requirements.txt
+
+## 🚀 Instrucciones de uso
+
+Instalar dependencias:
+
+pip install -r requirements.txt
+
+## 👤 Autor
+Angel Yambay M
