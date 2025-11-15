@@ -1,0 +1,3 @@
+modelo,n_clusters,silhouette,inertia
+KMeans,4,0.223,25200.33
+DBSCAN,3,,
