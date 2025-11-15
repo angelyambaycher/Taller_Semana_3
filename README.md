@@ -129,6 +129,58 @@ Incluye:
 
 ---
 
+## 📊 Visualizaciones del proyecto
+
+A continuación se muestran las principales figuras generadas durante el análisis de clustering.  
+Cada imagen está disponible dentro de la carpeta [`figures/`](figures/).
+
+---
+
+### 🔹 Método del Codo (K-Means)
+
+![Elbow Method](https://raw.githubusercontent.com/angelyambaycher/Taller_Semana_3/main/figures/elbow_kmeans.png)
+
+---
+
+### 🔹 Clusters K-Means (PCA 2D)
+
+![KMeans PCA](https://raw.githubusercontent.com/angelyambaycher/Taller_Semana_3/main/figures/kmeans_pca.png)
+
+---
+
+### 🔹 Clusters K-Means (t-SNE)
+
+![KMeans t-SNE](https://raw.githubusercontent.com/angelyambaycher/Taller_Semana_3/main/figures/kmeans_tsne.png)
+
+---
+
+### 🔹 Visualización DBSCAN
+
+![DBSCAN Clusters](https://raw.githubusercontent.com/angelyambaycher/Taller_Semana_3/main/figures/dbscan_clusters.png)
+
+---
+
+### 🔹 PCA – Reducción y Visualización
+
+![PCA 2D](https://raw.githubusercontent.com/angelyambaycher/Taller_Semana_3/main/figures/pca_2d.png)
+
+---
+
+### 🔹 Comparación de Silhouette Score
+
+![Silhouette Comparison](https://raw.githubusercontent.com/angelyambaycher/Taller_Semana_3/main/figures/silhouette_comparison.png)
+
+---
+
+## 📂 Carpeta de Figuras
+
+Todas las imágenes están disponibles aquí:
+
+👉 [`figures/`](https://github.com/angelyambaycher/Taller_Semana_3/tree/main/figures)
+
+
+---
+
 ## Conclusiones principales
 
 1. **Estructura de cuatro clusters bien definida (K-Means)**  
